@@ -1,4 +1,4 @@
-package com.stewhouse.pokereco.pokereco;
+package com.stewhouse.pokereco;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.stewhouse.pokereco.pokereco;
+package com.stewhouse.pokereco;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

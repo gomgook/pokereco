@@ -1,9 +1,9 @@
-package com.stewhouse.pokereco.pokereco;
+package com.stewhouse.pokereco;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class PMainActivity extends AppCompatActivity {
+public class PRMainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
