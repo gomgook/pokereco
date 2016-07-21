@@ -12,6 +12,11 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
+import java.io.InputStream;
+
 public class PRMainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout = null;
@@ -24,6 +29,22 @@ public class PRMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initDrawer();
+
+        try {
+            InputStream is = getAssets().open("game_data_skill.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+
+            is.read(buffer);
+            is.close();
+            String json = new String(buffer, "UTF-8");
+
+            JsonParser parser = new JsonParser();
+            JsonObject jsonObject = parser.parse(json).getAsJsonObject();
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
+
     }
 
     private void initDrawer() {
@@ -72,8 +93,7 @@ public class PRMainActivity extends AppCompatActivity {
             if (convertView == null) {
                 LayoutInflater layoutInflater = LayoutInflater.from(PRMainActivity.this);
 
-                // IV calculator Cell Setting.
-                if (position == 0) {
+                if (position == 0) {    // IV calculator Cell Setting.
                     convertView = layoutInflater.inflate(R.layout.cell_drawer_iv, parent, false);
                 }
             }
