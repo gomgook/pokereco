@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    
+    <color name="drawer_container_bg">#FFFFFF</color>
+    <color name="drawer_cell_bg">#3F51B5</color>
+
+    <color name="fragment_default_bg">#BBBBBB</color>
 </resources>
