@@ -73,6 +73,7 @@ public class PRMainActivity extends AppCompatActivity {
         readGameData();
     }
 
+    // TODO: Need to refactoring.
     private void readGameData() {
         try {
             InputStream is = getAssets().open("game_data_skill_" + PRConstants.GAME_DATA_SKILL_VERSION + ".json");
