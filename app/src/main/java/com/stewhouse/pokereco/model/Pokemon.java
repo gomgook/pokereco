@@ -11,27 +11,35 @@ public class Pokemon {
     private int baseAttack;
     private int baseDefense;
     private double maxCP;
-    private double heightMeters;
-    private double weightKg;
-    private double heightStdDev;
-    private double weightStdDev;
-    private String[] quickAttacks;
-    private String[] specialAttacks;
-    private double baseCaptureRate;
-    private double baseFleeRate;
-    private double collisionRadiusMeters;
-    private double collisionHeightMeters;
-    private double collisionHeadRadiusMeters;
-    private String movementType;
-    private int movementTimerSec;
-    private double jumpTimeSec;
-    private int attackTimeSec;
-    private int[] quickMoveIDs;
-    private int[] cinematicMoveIDs;
-    private int[] animationTime;
-    private int evolution;
-    private String evolutionPips;
-    private int pokemonClass;
-    private String familyId;
-    private int candyToEvolve;
+//    private double heightMeters;
+//    private double weightKg;
+//    private double heightStdDev;
+//    private double weightStdDev;
+//    private String[] quickAttacks;
+//    private String[] specialAttacks;
+//    private double baseCaptureRate;
+//    private double baseFleeRate;
+//    private double collisionRadiusMeters;
+//    private double collisionHeightMeters;
+//    private double collisionHeadRadiusMeters;
+//    private String movementType;
+//    private int movementTimerSec;
+//    private double jumpTimeSec;
+//    private int attackTimeSec;
+//    private int[] quickMoveIDs;
+//    private int[] cinematicMoveIDs;
+//    private double[] animationTime;
+//    private int evolution;
+//    private String evolutionPips;
+//    private int pokemonClass;
+//    private String familyId;
+//    private int candyToEvolve;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
 }

@@ -551,7 +551,7 @@
         201,
         221
       ],
-      "cinematicMoveIDs": 133,
+      "cinematicMoveIDs": [ 133 ],
       "animationTime": [
         0,
         0.6667,
@@ -602,7 +602,7 @@
         201,
         221
       ],
-      "cinematicMoveIDs": 133,
+      "cinematicMoveIDs": [ 133 ],
       "animationTime": [
         1.3333,
         0.6667,
@@ -712,7 +712,7 @@
         201,
         236
       ],
-      "cinematicMoveIDs": 133,
+      "cinematicMoveIDs": [ 133 ],
       "animationTime": [
         0,
         0.6667,
@@ -764,7 +764,7 @@
         201,
         236
       ],
-      "cinematicMoveIDs": 133,
+      "cinematicMoveIDs": [ 133 ],
       "animationTime": [
         0,
         0.6667,
@@ -3568,7 +3568,7 @@
       "movementTimerSec": 29,
       "jumpTimeSec": 1,
       "attackTimeSec": 10,
-      "quickMoveIDs": 234,
+      "quickMoveIDs": [ 234 ],
       "cinematicMoveIDs": [
         48,
         56,
@@ -6494,7 +6494,7 @@
       "movementTimerSec": 4,
       "jumpTimeSec": 1.25,
       "attackTimeSec": 11,
-      "quickMoveIDs": 214,
+      "quickMoveIDs": [ 214 ],
       "cinematicMoveIDs": [
         90,
         116,
@@ -7347,8 +7347,8 @@
       "movementTimerSec": 3600,
       "jumpTimeSec": 1.29999995231628,
       "attackTimeSec": 3600,
-      "quickMoveIDs": 231,
-      "cinematicMoveIDs": 133,
+      "quickMoveIDs": [ 231 ],
+      "cinematicMoveIDs": [ 133 ],
       "animationTime": [
         1.3333,
         0.6667,
@@ -7510,8 +7510,8 @@
       "movementTimerSec": 3600,
       "jumpTimeSec": 1,
       "attackTimeSec": 3600,
-      "quickMoveIDs": 222,
-      "cinematicMoveIDs": 133,
+      "quickMoveIDs": [ 222 ],
+      "cinematicMoveIDs": [ 133 ],
       "animationTime": [
         0,
         0.6667,
@@ -7616,7 +7616,7 @@
       "movementTimerSec": 3,
       "jumpTimeSec": 1,
       "attackTimeSec": 8,
-      "quickMoveIDs": 230,
+      "quickMoveIDs": [ 230 ],
       "cinematicMoveIDs": [
         58,
         105,
@@ -7669,7 +7669,7 @@
       "movementTimerSec": 4,
       "jumpTimeSec": 1.29999995231628,
       "attackTimeSec": 11,
-      "quickMoveIDs": 205,
+      "quickMoveIDs": [ 205 ],
       "cinematicMoveIDs": [
         29,
         78,
@@ -7722,7 +7722,7 @@
       "movementTimerSec": 3,
       "jumpTimeSec": 1.35000002384185,
       "attackTimeSec": 8,
-      "quickMoveIDs": 209,
+      "quickMoveIDs": [ 209 ],
       "cinematicMoveIDs": [
         20,
         34,
@@ -8180,7 +8180,7 @@
       "movementTimerSec": 3,
       "jumpTimeSec": 1,
       "attackTimeSec": 8,
-      "quickMoveIDs": 218,
+      "quickMoveIDs": [ 218 ],
       "cinematicMoveIDs": [
         39,
         32,
@@ -8234,7 +8234,7 @@
       "movementTimerSec": 3,
       "jumpTimeSec": 1,
       "attackTimeSec": 8,
-      "quickMoveIDs": 205,
+      "quickMoveIDs": [ 205 ],
       "cinematicMoveIDs": [
         29,
         78,
@@ -8288,7 +8288,7 @@
       "movementTimerSec": 3,
       "jumpTimeSec": 1,
       "attackTimeSec": 8,
-      "quickMoveIDs": 209,
+      "quickMoveIDs": [ 209 ],
       "cinematicMoveIDs": [
         20,
         34,
@@ -8341,7 +8341,7 @@
       "movementTimerSec": 10,
       "jumpTimeSec": 0.850000023841857,
       "attackTimeSec": 29,
-      "quickMoveIDs": 204,
+      "quickMoveIDs": [ 204 ],
       "cinematicMoveIDs": [
         11,
         58,
@@ -8394,7 +8394,7 @@
       "movementTimerSec": 8,
       "jumpTimeSec": 1.25,
       "attackTimeSec": 23,
-      "quickMoveIDs": 204,
+      "quickMoveIDs": [ 204 ],
       "cinematicMoveIDs": [
         11,
         58,
@@ -8568,7 +8568,7 @@
       "movementTimerSec": 3,
       "jumpTimeSec": 1,
       "attackTimeSec": 8,
-      "quickMoveIDs": 222,
+      "quickMoveIDs": [ 222 ],
       "cinematicMoveIDs": [
         12,
         25,

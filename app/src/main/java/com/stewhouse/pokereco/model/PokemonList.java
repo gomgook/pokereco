@@ -7,4 +7,8 @@ import java.util.ArrayList;
  */
 public class PokemonList {
     private ArrayList<Pokemon> pokemons = null;
+
+    public ArrayList<Pokemon> getPokemonList() {
+        return pokemons;
+    }
 }

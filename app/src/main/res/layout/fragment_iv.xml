@@ -1,8 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fragment_default_bg">
 
-</LinearLayout>
+    <Spinner
+        android:id="@+id/spinner_pokemon_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/edit_hp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter pokemon HP"
+        android:layout_below="@id/spinner_pokemon_name"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/edit_cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter pokemon CP"
+        android:layout_below="@id/edit_hp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/edit_stardust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter pokemon stardust"
+        android:layout_below="@id/edit_cp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_level_guess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_stardust"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Calculate"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
