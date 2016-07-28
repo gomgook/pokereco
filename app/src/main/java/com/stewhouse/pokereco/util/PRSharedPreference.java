@@ -65,4 +65,32 @@ public class PRSharedPreference {
         editor.putString(PRConstants.PREF_GAME_DATA_POKEMON, skillList);
         editor.commit();
     }
+
+    public static String getGameDataStardustVersion(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences(PRConstants.PREF_GAME_DATA_STARDUST, Context.MODE_PRIVATE);
+
+        return preferences.getString(PRConstants.PREF_GAME_DATA_STARDUST_VERSION, null);
+    }
+
+    public static void setGameDataStardustVersion(Context context, String version) {
+        SharedPreferences preferences = context.getSharedPreferences(PRConstants.PREF_GAME_DATA_STARDUST, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+
+        editor.putString(PRConstants.PREF_GAME_DATA_STARDUST_VERSION, version);
+        editor.commit();
+    }
+
+    public static String getGameDataStardustList(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences(PRConstants.PREF_GAME_DATA_STARDUST, Context.MODE_PRIVATE);
+
+        return preferences.getString(PRConstants.PREF_GAME_DATA_STARDUST, null);
+    }
+
+    public static void setGameDataStardustList(Context context, String skillList) {
+        SharedPreferences preferences = context.getSharedPreferences(PRConstants.PREF_GAME_DATA_STARDUST, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+
+        editor.putString(PRConstants.PREF_GAME_DATA_STARDUST, skillList);
+        editor.commit();
+    }
 }

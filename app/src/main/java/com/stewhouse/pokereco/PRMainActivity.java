@@ -58,16 +58,22 @@ public class PRMainActivity extends AppCompatActivity {
     }
 
     private void checkGameData() {
-        if (PRSharedPreference.getGameDataSkillVersion(this) == null) {
+        if (PRSharedPreference.getGameDataSkillVersion(this) == null) { // Check skill data version.
             PRSharedPreference.setGameDataSkillVersion(this, PRConstants.GAME_DATA_SKILL_VERSION);
         } else if (PRSharedPreference.getGameDataSkillVersion(this) != null && !PRSharedPreference.getGameDataSkillVersion(this).equals(PRConstants.PREF_GAME_DATA_SKILL_VERSION)) {
             PRSharedPreference.setGameDataSkillVersion(this, PRConstants.GAME_DATA_SKILL_VERSION);
         }
 
-        if (PRSharedPreference.getGameDataPokemonVersion(this) == null) {
+        if (PRSharedPreference.getGameDataPokemonVersion(this) == null) {   // Check pokemon data version.
             PRSharedPreference.setGameDataPokemonVersion(this, PRConstants.GAME_DATA_POKEMON_VERSION);
         } else if (PRSharedPreference.getGameDataPokemonVersion(this) != null && !PRSharedPreference.getGameDataPokemonVersion(this).equals(PRConstants.PREF_GAME_DATA_POKEMON_VERSION)) {
             PRSharedPreference.setGameDataPokemonVersion(this, PRConstants.GAME_DATA_POKEMON_VERSION);
+        }
+
+        if (PRSharedPreference.getGameDataStardustVersion(this) == null) {   // Check stardust data version.
+            PRSharedPreference.setGameDataStardustVersion(this, PRConstants.GAME_DATA_STARDUST_VERSION);
+        } else if (PRSharedPreference.getGameDataStardustVersion(this) != null && !PRSharedPreference.getGameDataStardustVersion(this).equals(PRConstants.GAME_DATA_STARDUST_VERSION)) {
+            PRSharedPreference.setGameDataStardustVersion(this, PRConstants.GAME_DATA_STARDUST_VERSION);
         }
 
         readGameData();
@@ -102,6 +108,22 @@ public class PRMainActivity extends AppCompatActivity {
 
             if (json != null) {
                 PRSharedPreference.setGameDataPokemonList(this, json);
+            }
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
+
+        try {
+            InputStream is = getAssets().open("game_data_stardust_" + PRConstants.GAME_DATA_STARDUST_VERSION + ".json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+
+            is.read(buffer);
+            is.close();
+            String json = new String(buffer, "UTF-8");
+
+            if (json != null) {
+                PRSharedPreference.setGameDataStardustList(this, json);
             }
         } catch (Throwable e) {
             e.printStackTrace();

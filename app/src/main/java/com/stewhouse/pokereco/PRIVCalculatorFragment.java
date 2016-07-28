@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.google.gson.Gson;
+import com.stewhouse.pokereco.model.LevelRangeList;
 import com.stewhouse.pokereco.model.Pokemon;
 import com.stewhouse.pokereco.model.PokemonList;
 import com.stewhouse.pokereco.util.PRSharedPreference;
@@ -30,6 +31,8 @@ public class PRIVCalculatorFragment extends Fragment {
     private List<String> mPokemonNameList = null;
     private Pokemon mCurrentPokemon = null;
 
+    private LevelRangeList mLevelRanges = null;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -47,6 +50,8 @@ public class PRIVCalculatorFragment extends Fragment {
                 mPokemonNameList.add(String.valueOf(pokemon.getId()) + ". " + pokemon.getName());
             }
 
+            mLevelRanges = gson.fromJson(PRSharedPreference.getGameDataStardustList(getActivity()), LevelRangeList.class);
+
             ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_dropdown_item, mPokemonNameList);
 
             arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -63,10 +68,6 @@ public class PRIVCalculatorFragment extends Fragment {
                 }
             });
             mPokemonNameSpinner.setAdapter(arrayAdapter);
-        }
-
-        if (mPokemonLevelGuessSpinner != null) {
-            
         }
 
         return view;
