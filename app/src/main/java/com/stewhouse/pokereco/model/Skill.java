@@ -4,6 +4,7 @@ package com.stewhouse.pokereco.model;
  * Created by Gomguk on 16. 7. 21..
  */
 public class Skill {
+
     private int id;
     private String name;
     private String moveType;

@@ -4,6 +4,7 @@ package com.stewhouse.pokereco.model;
  * Created by Gomguk on 16. 7. 22..
  */
 public class Pokemon {
+
     private int id;
     private String name;
     private String[] types;
@@ -11,7 +12,7 @@ public class Pokemon {
     private int baseAttack;
     private int baseDefense;
     private double maxCP;
-//    private double heightMeters;
+    private double heightMeters;
 //    private double weightKg;
 //    private double heightStdDev;
 //    private double weightStdDev;

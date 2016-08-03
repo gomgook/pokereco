@@ -26,20 +26,29 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:hint="HP"
-            android:layout_below="@id/spinner_pokemon_name" />
+            android:layout_below="@id/spinner_pokemon_name"
+            android:inputType="number"
+            android:maxLength="5"
+            android:lines="1"/>
 
         <EditText
             android:id="@+id/edit_cp"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:hint="CP"
-            android:layout_below="@id/edit_hp"/>
+            android:layout_below="@id/edit_hp"
+            android:inputType="number"
+            android:maxLength="5"
+            android:lines="1"/>
 
         <EditText
             android:id="@+id/edit_stardust"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:hint="Stardust"/>
+            android:hint="Stardust"
+            android:inputType="number"
+            android:maxLength="5"
+            android:lines="1"/>
 
     </LinearLayout>
 
@@ -50,14 +59,43 @@
         android:layout_below="@id/hp_cp_layout"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="220dp"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:background="@color/drawer_container_bg">
 
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="SAVE"
+            android:background="@color/drawer_cell_bg"/>
 
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btn_save"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="CLEAR"
+            android:background="@color/drawer_cell_bg"/>
+
+        <ListView
+            android:id="@+id/list_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/btn_save"
+            android:layout_margin="10dp"/>
 
     </RelativeLayout>
 
